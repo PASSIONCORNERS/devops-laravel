@@ -3,13 +3,13 @@
     "VPC": {
       "Type": "AWS::EC2::VPC",
       "Properties": {
-        "CidrBlock": "10.0.0.0/16",
+        "CidrBlock": "10.1.0.0/16",
         "EnableDnsSupport": true,
         "EnableDnsHostnames": true,
         "InstanceTenancy": "default",
         "Tags": [
           {
-            "Value": "topeno_staging",
+            "Value": "topeno_staging_vpc",
             "Key": "Name"
           }
         ]
@@ -44,7 +44,7 @@
           "Ref": "VPC"
         },
         "AvailabilityZoneId": "apse1-az1",
-        "CidrBlock": "10.0.0.0/16",
+        "CidrBlock": "10.1.0.0/20",
         "MapPublicIpOnLaunch": true,
         "Tags": [
           {
@@ -61,7 +61,7 @@
           "Ref": "VPC"
         },
         "AvailabilityZoneId": "apse1-az1",
-        "CidrBlock": "10.0.128.0/16",
+        "CidrBlock": "10.1.128.0/20",
         "MapPublicIpOnLaunch": false,
         "Tags": [
           {
@@ -78,7 +78,7 @@
           "Ref": "VPC"
         },
         "AvailabilityZoneId": "apse1-az2",
-        "CidrBlock": "10.0.16.0/16",
+        "CidrBlock": "10.1.16.0/20",
         "MapPublicIpOnLaunch": true,
         "Tags": [
           {
@@ -95,7 +95,7 @@
           "Ref": "VPC"
         },
         "AvailabilityZoneId": "apse1-az2",
-        "CidrBlock": "10.0.144.0/16",
+        "CidrBlock": "10.1.144.0/20",
         "MapPublicIpOnLaunch": false,
         "Tags": [
           {
