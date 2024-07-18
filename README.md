@@ -11,10 +11,6 @@ There are two approaches to getting started:
 
 1. Use the provided Amazon AWS CloudFormation stack to create your infrastructure in AWS.
 
-Here is a "how to" video for the CloudFormation deployment (released: April 19):
-
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/7xOpxpdLcfI/0.jpg)](https://www.youtube.com/watch?v=7xOpxpdLcfI)
-
 2. If you have an existing server, then clone this repo into the Ubuntu server where the Laravel application will be hosted. Be sure to clone into a directory that is accessible by all users (e.g., /usr/local/bin/deploy )
 
 ### Provisioning
