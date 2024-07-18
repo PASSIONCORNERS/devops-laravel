@@ -241,7 +241,7 @@
       "Properties": {
         "ImageId": "ami-060e277c0d4cce553",
         "InstanceType": "t2.micro",
-        "KeyName": "topeno",
+        "KeyName": "topeno_staging",
         "SubnetId": {
           "Ref": "PublicSubnet1"
         },
