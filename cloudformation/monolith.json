@@ -241,7 +241,7 @@
       "Properties": {
         "ImageId": "ami-060e277c0d4cce553",
         "InstanceType": "t2.micro",
-        "KeyName": "topeno_staging",
+        "KeyName": "topeno",
         "SubnetId": {
           "Ref": "PublicSubnet1"
         },
@@ -262,7 +262,7 @@
               "",
               [
                 "#!/bin/bash -ex\n",
-                "git clone https://github.com/rcravens/devops-laravel.git /usr/local/bin/devops\n",
+                "git clone https://github.com/PASSIONCORNERS/devops-laravel.git /usr/local/bin/devops\n",
                 "/usr/local/bin/devops/common/create_aliases.sh\n",
                 "source ~/.bashrc\n"
               ]
