@@ -239,7 +239,7 @@
     "EC2Instance": {
       "Type": "AWS::EC2::Instance",
       "Properties": {
-        "ImageId": "ami-080e1f13689e07408",
+        "ImageId": "ami-060e277c0d4cce553",
         "InstanceType": "t2.micro",
         "KeyName": "topeno_staging",
         "SubnetId": {
@@ -262,7 +262,7 @@
               "",
               [
                 "#!/bin/bash -ex\n",
-                "git clone https://github.com/rcravens/devops-laravel.git /usr/local/bin/devops\n",
+                "git clone https://github.com/PASSIONCORNERS/devops-laravel.git /usr/local/bin/devops\n",
                 "/usr/local/bin/devops/common/create_aliases.sh\n",
                 "source ~/.bashrc\n"
               ]
