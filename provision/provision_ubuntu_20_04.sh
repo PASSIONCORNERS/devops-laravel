@@ -108,10 +108,11 @@ case $installs_redis in
   ;;
 esac
 
-if [ $sqlite -eq 1 ]; then
-  title "Install SQLite"
-  source ./installers/sqlite.sh
-fi
+# Install SQLite
+# if [ $sqlite -eq 1 ]; then
+#   title "Install SQLite"
+#   source ./installers/sqlite.sh
+# fi
 
 title "Install MySQL"
 case $installs_database_mysql in
