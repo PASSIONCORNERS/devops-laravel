@@ -12,8 +12,14 @@ SECURE_MYSQL=$(expect -c "
 set timeout 10
 spawn mysql_secure_installation
 
-expect \"Enter password for root user:\"
+expect \"Enter password for user root:\"
 send \"$mysql_root_password\r\"
+
+expect \"VALIDATE PASSWORD COMPONENT can be used to test passwords
+and improve security. It checks the strength of password
+and allows the users to set only those passwords which are
+secure enough. Would you like to setup VALIDATE PASSWORD component\"
+send \"n\r\"
 
 expect \"Change the password for root\"
 send \"n\r\"
@@ -22,7 +28,7 @@ expect \"Remove anonymous users\"
 send \"y\r\"
 
 expect \"Disallow root login remotely\"
-send \"y\r\"
+send \"n\r\"
 
 expect \"Remove test database and access to it?\"
 send \"y\r\"
