@@ -4,7 +4,7 @@
 sudo apt-get install -y mysql-server
 
 # Set the root password
-sudo mysql -u root -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '$db_root_password';"
+sudo mysql -u root -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '$installs_database_root_password';"
 
 # Automate the mysql_secure_installation process
 SECURE_MYSQL=$(expect -c "
@@ -13,7 +13,7 @@ set timeout 10
 spawn mysql_secure_installation
 
 expect \"Enter password for user root:\"
-send \"$mysql_root_password\r\"
+send \"$installs_database_root_password\r\"
 
 expect \"VALIDATE PASSWORD COMPONENT can be used to test passwords\"
 send \"n\r\"
