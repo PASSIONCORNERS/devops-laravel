@@ -15,16 +15,13 @@ spawn mysql_secure_installation
 expect \"Enter password for user root:\"
 send \"$mysql_root_password\r\"
 
-expect \"VALIDATE PASSWORD COMPONENT can be used to test passwords
-and improve security. It checks the strength of password
-and allows the users to set only those passwords which are
-secure enough. Would you like to setup VALIDATE PASSWORD component\"
+expect \"VALIDATE PASSWORD COMPONENT can be used to test passwords\"
 send \"n\r\"
 
-expect \"Change the password for root\"
+expect \"Change the password for root ?\"
 send \"n\r\"
 
-expect \"Remove anonymous users\"
+expect \"Remove anonymous users?\"
 send \"y\r\"
 
 expect \"Disallow root login remotely\"
