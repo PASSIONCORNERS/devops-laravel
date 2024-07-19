@@ -13,7 +13,8 @@
             "Key": "Name"
           }
         ]
-      }
+      },
+      "DeletionPolicy": "Delete"
     },
     "InternetGateway": {
       "Type": "AWS::EC2::InternetGateway",
