@@ -124,16 +124,17 @@ case $installs_database_mysql in
   ;;
 esac
 
-title "Install MariaDB"
-case $installs_database_mariadb in
-[yY][eE][sS] | [yY])
-  source ./installers/mariadb.sh
-  status "mariadb installed"
-  ;;
-*)
-  status "not installing mariadb"
-  ;;
-esac
+# Install mariaDB
+# title "Install MariaDB"
+# case $installs_database_mariadb in
+# [yY][eE][sS] | [yY])
+#   source ./installers/mariadb.sh
+#   status "mariadb installed"
+#   ;;
+# *)
+#   status "not installing mariadb"
+#   ;;
+# esac
 
 title "Install Certbot (LetsEncrypt)"
 case $installs_certbot in
