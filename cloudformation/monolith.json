@@ -253,8 +253,18 @@
         ],
         "Tags": [
           {
-            "Value": "topeno_staging_ec2_instance",
+            "Value": "topeno_staging_ec2",
             "Key": "Name"
+          }
+        ],
+        "BlockDeviceMappings": [
+          {
+            "DeviceName": "/dev/xvda",
+            "Ebs": {
+              "VolumeSize": 30,
+              "VolumeType": "gp3",
+              "DeleteOnTermination": true
+            }
           }
         ],
         "UserData": {
